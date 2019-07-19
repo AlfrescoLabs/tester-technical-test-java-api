@@ -7,21 +7,13 @@
 
 package org.alfresco.test.search.functional.searchServices.search;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.alfresco.rest.search.SearchResponse;
 import org.alfresco.test.search.functional.AbstractE2EFunctionalTest;
 import org.alfresco.utility.constants.UserRole;
 import org.alfresco.utility.data.DataContent;
 import org.alfresco.utility.data.DataSite;
 import org.alfresco.utility.model.FileModel;
 import org.alfresco.utility.model.FileType;
-import org.alfresco.utility.model.FolderModel;
-import org.apache.chemistry.opencmis.commons.PropertyIds;
-import org.apache.chemistry.opencmis.commons.enums.VersioningState;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
