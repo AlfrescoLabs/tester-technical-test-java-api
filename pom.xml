@@ -6,16 +6,15 @@
       <artifactId>alfresco-super-pom</artifactId>
       <version>10</version>
    </parent>
-   <groupId>search-analytics-e2e-test</groupId>
-   <artifactId>search-analytics-e2e-test</artifactId>
-   <name>Search Analytics E2E Tests</name>
-   <description>Test Project to test Search Service and Analytics Features on a complete setup of Alfresco, Share</description>
+   <groupId>test-acs-java-api</groupId>
+   <artifactId>test-acs-java-api</artifactId>
+   <name>Technical Tests Java API</name>
+   <description>Technical Test Project to test Java API</description>
    <properties>
       <tas.rest.api.version>6.0.0.3</tas.rest.api.version>
       <tas.cmis.api.version>6.0.0.1</tas.cmis.api.version>
       <tas.utility.version>2.0.12</tas.utility.version>
-      <rm.version>2.6.0</rm.version>
-      <suiteXmlFile>src/test/resources/SearchSuite.xml</suiteXmlFile>
+      <suiteXmlFile>src/test/resources/TestSuite.xml</suiteXmlFile>
       <test.exclude></test.exclude>
       <test.include></test.include>
       <java.version>11</java.version>
@@ -75,30 +74,11 @@
               </exclusion>
           </exclusions>
       </dependency>
-      <dependency>
-         <groupId>org.alfresco</groupId>
-         <artifactId>alfresco-rm-automation-enterprise-rest-api</artifactId>
-         <version>${rm.version}</version>
-         <scope>test</scope>
-      </dependency>
        <dependency>
            <groupId>com.fasterxml.jackson.core</groupId>
            <artifactId>jackson-databind</artifactId>
             <version>${jackson.databind.version}</version>
        </dependency>
-      <dependency>
-         <groupId>org.alfresco</groupId>
-         <artifactId>alfresco-rm-automation-community-rest-api</artifactId>
-         <version>${rm.version}</version>
-         <classifier>tests</classifier>
-         <scope>test</scope>
-          <exclusions>
-              <exclusion>
-                  <groupId>com.fasterxml.jackson.core</groupId>
-                  <artifactId>jackson-databind</artifactId>
-              </exclusion>
-          </exclusions>
-      </dependency>
         <!-- alfresco tester settings -->
         <dependency>
             <groupId>org.alfresco.tas</groupId>

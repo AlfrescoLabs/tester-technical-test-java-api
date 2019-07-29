@@ -32,7 +32,7 @@ import org.testng.annotations.Test;
  * @author meenal bhave
  */
 
-public class SearchWithCustomModelTest extends AbstractE2EFunctionalTest
+public class FixMeTest extends AbstractE2EFunctionalTest
 {
     @Autowired
     protected DataSite dataSite;

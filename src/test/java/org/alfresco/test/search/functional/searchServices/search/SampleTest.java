@@ -24,7 +24,7 @@ import org.testng.annotations.Test;
  * @author meenal bhave
  */
 
-public class SearchSampleTest extends AbstractE2EFunctionalTest
+public class SampleTest extends AbstractE2EFunctionalTest
 {
     @Autowired
     protected DataSite dataSite;
