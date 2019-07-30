@@ -1,17 +1,27 @@
 # Setup
-The automated test project requires a running instance of Alfresco Content Repository (ACS) and Search Services at the least.
-The test environment may be setup already. If not, the instructions are provided in the <Bring the Test Environment up> section below.
+The automated test project requires the pre-requisites listed below and a running instance of Alfresco Content Repository (ACS) and Search Services at the least.
+This will be already setup for you, if you are using an Alfresco provided pc for the technical test.
+
+Please check that you are able to:
+1. Compile the project
+2. Access the test environment before you move on to the <Challenge> section of the Technical Test.
+
+Test Environment can be accessed on:
+1. http://172.29.100.166:8080/alfresco
+2. https://search-cdata-nv.dev.alfresco.me/alfresco
+
+<Bring the Test Environment up> section below provides instructions on how a new test environment can be started, when an ACS instance isn't available.
 
 # Prerequisites
 Java 11
 
 Maven 3.2.0
 
-Docker
-
 Alfresco Content Services 5.2.2 or above
 
 Search Services 1.2.0 or above
+
+Docker (Necessary to create a new Test Environment using the instructions below)
 
 # Bring the Test Environment up
 
@@ -54,6 +64,7 @@ Sample test classes: SetupTest and FixMeTest have been provided.
 This should provide an example of data preperation methods and how search api can be tested.
 FixMeTest includes some tests for testing Range search, as documented here: https://docs.alfresco.com/5.2/concepts/rm-searchsyntax-ranges.html
 
+# Challenge
 There are 2 challenges:
 1. Run the FixMeTest test and analyse, fix any failures that you might come across.
 2. Using the provided AFTS references above, design (note down, pseudocode) a few tests to test conjunction, disjunction and negation opertors in a search query. Implement some of these in SampleTest class. Data preparation example is provided and can be used or amended as per your needs.
