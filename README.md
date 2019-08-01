@@ -65,8 +65,9 @@ This should provide an example of data preperation methods and how search api ca
 FixMeTest includes some tests for testing Range search, as documented here: https://docs.alfresco.com/5.2/concepts/rm-searchsyntax-ranges.html
 
 # Challenge
-There are 2 challenges:
+There are 3 challenges:
 1. Run the FixMeTest test and analyse, fix any failures that you might come across.
-2. Using the provided AFTS references above, design (note down, pseudocode) a few tests to test conjunction, disjunction and negation opertors in a search query. Implement some of these in SampleTest class. Data preparation example is provided and can be used or amended as per your needs.
+2. Using the provided AFTS references above, design (note down, pseudocode) tests to test conjunction, disjunction and negation opertors in a search query. 
+3. Implement some of these in SampleTest class. Data preparation example is provided and can be used or amended as per your needs.
 
 
