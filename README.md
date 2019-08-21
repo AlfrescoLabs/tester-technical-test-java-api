@@ -17,11 +17,68 @@ Java 11
 
 Maven 3.2.0
 
-Alfresco Content Services 5.2.2 or above
+Test Environment with: 
+1. Alfresco Content Services 5.2.2 or above 
+2. Search Services 1.2.0 or above
 
-Search Services 1.2.0 or above
+Docker: Necessary to create a new Test Environment using the instructions below, if one isn't already provided
 
-Docker (Necessary to create a new Test Environment using the instructions below)
+# Maven Setup
+
+1. Download the latest apache-maven-*-bin.zip file
+2. Unzip it somewhere on your disk
+3. Add <InstallDir>/bin to your PATH (You don't have to worry about M2_HOME environment variable.)
+
+Test the install using: mvn -version
+
+## Configure Maven for Alfresco
+
+First, test that you have access by logging into to: artifacts.alfresco.com with your LDAP / user account.
+
+Then, create the file ~/.m2/settings.xml
+On Windows : C:\Users\<username>\.m2\settings.xml) with the following content:
+
+```
+<settings>
+  <profiles>
+    <profile>
+      <id>alfresco-internal</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <id>alfresco-internal</id>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <name>Alfresco Internal Repository</name>
+          <url>https://artifacts.alfresco.com/nexus/content/groups/internal/</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>alfresco-internal</id>
+          <name>Alfresco Internal Repository</name>
+          <url>https://artifacts.alfresco.com/nexus/content/groups/public</url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+
+  <servers>
+    <server>
+      <id>alfresco-internal</id>
+      <username>Your_LDAP_Login</username>
+      <password>Your_LDAP_Password</password>
+    </server>
+  </servers>
+
+</settings>
+```
 
 # Bring the Test Environment up
 
