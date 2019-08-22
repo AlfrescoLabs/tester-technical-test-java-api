@@ -17,11 +17,15 @@ Java 11
 
 Maven 3.2.0
 
+Docker: Docker is required to be setup on the machine if it's necessary to create a new Test Environment using the instructions below.
+Create an environment only if one isn't already available.
+
 Test Environment with: 
 1. Alfresco Content Services 5.2.2 or above 
 2. Search Services 1.2.0 or above
 
-Docker: Necessary to create a new Test Environment using the instructions below, if one isn't already provided
+is required to run the tests. 
+If the test environments (URLs) provided above are not availale / accessible, you would need to set one up using docker and instructions below.
 
 # Maven Setup
 
@@ -96,6 +100,19 @@ This should start an instance of ACS Repository with Share and Search Services.
 ```
 
 # Compile the project
+Project can be built using the instructions below. 
+Ensure that default.properties have the appropriate settings. e.g.
+If the environment to be used for tests is: https://search-cdata-nv.dev.alfresco.me/alfresco
+
+Check that the default.properties file is been updated with the following settings.
+
+```
+alfresco.scheme=https
+alfresco.server=search-cdata-nv.dev.alfresco.me
+alfresco.port=443
+
+```
+
 `mvn clean install -DskipTests`
 
 # Run the tests
