@@ -4,7 +4,7 @@ There are 3 exercises:
 
 1. Run the 'FixMeTest' and analyse and fix any failures that you might come across.
 2. <Search References> section below provides details about a search feature, with an example of search conjunction, disjunction and negation opertors. Using the provided documentation, design tests to test conjunction, disjunction and negation operators in a search term. You can use any format for writing tests and note down designed tests electronically or using Pen and paper. 
-3. Implement some of these tests in 'SampleTest' class. Data preparation example is provided and can be used or amended as per your needs. Refer to <FixMeTest> for example implementation of a test that is written to test Search for Ranges.
+3. Implement some of these tests in 'SampleTest' class. Data preparation example is provided and can be used or amended as per your needs. Refer to 'FixMeTest' for example implementation of a test that is written to test Search for Ranges.
 
 # Setup
 To test the project setup works for you, you can run 'SetupTest'. Before you run it, you need to be able to:
