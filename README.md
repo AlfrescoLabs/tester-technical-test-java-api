@@ -1,11 +1,13 @@
 # Technical Excercise
+
 There are 3 exercises:
-Excercise 1. Run the FixMeTest and analyse and fix any failures that you might come across.
-Excercise 2. Using the provided Search references below, design tests to test conjunction, disjunction and negation opertors in a search query. You can use any format and note down designed tests electronically or using Pen and paper. 
-Excercise 3. Implement some of these in SampleTest class. Data preparation example is provided and can be used or amended as per your needs.
+
+1. Run the FixMeTest and analyse and fix any failures that you might come across.
+2. <Search References> section below provides details about a search feature, with an example of search conjunction, disjunction and negation opertors. Using the provided documentation, design tests to test conjunction, disjunction and negation operators in a search term. You can use any format for writing tests and note down designed tests electronically or using Pen and paper. 
+3. Implement some of these tests in SampleTest class. Data preparation example is provided and can be used or amended as per your needs.
 
 # Setup
-To test the project setup works for you, you can run <SetupTest>. Before you run it, you need to be able to:
+To test the project setup works for you, you can run 'SetupTest'. Before you run it, you need to be able to:
 1. Access the Test Environment: See <Pre-configured Test Enviroments> section
 2. Configure and compile the test Project: See <Configure the project properties> section
 
@@ -35,7 +37,7 @@ If you are using your own pc, you would need to setup:
 - Access to Alfresco internal artifacts: See <Configure Maven for Alfresco> section before for more information on configuring access to Alfresco Internal Artifacts.
 - Docker: Only required if you are unable to access provided test environments and need to create a new test environment.
 
-### Maven Setup
+### Setup Maven
 
 1. Download the latest apache-maven-*-bin.zip file
 2. Unzip it somewhere on your disk
@@ -153,10 +155,18 @@ e.g.
 
 `mvn clean install -Dtest=FixMeTest`
 
-# Search API Reference:
-Search API reference using Swagger definition is available here: https://api-explorer.alfresco.com/api-explorer/#!/search/search
+# Search References
 
-#AFTS Search Documentation:
-1. Conjunction (AND Operator): https://docs.alfresco.com/5.2/concepts/rm-searchsyntax-conjunct.html
-2. Disjunction (OR Operator): https://docs.alfresco.com/5.2/concepts/rm-searchsyntax-disjunct.html
-3. Negation (NOT Operator): https://docs.alfresco.com/5.2/concepts/rm-searchsyntax-negate.html
+Search API
+
+```
+https://api-explorer.alfresco.com/api-explorer/#!/search/search
+```
+
+Search with Conjunction (And), Disjunction (Or) and Negation (Not) operators:
+
+```
+1. Conjunction: https://docs.alfresco.com/5.2/concepts/rm-searchsyntax-conjunct.html
+2. Disjunction: https://docs.alfresco.com/5.2/concepts/rm-searchsyntax-disjunct.html
+3. Negation: https://docs.alfresco.com/5.2/concepts/rm-searchsyntax-negate.html
+```
