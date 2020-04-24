@@ -22,6 +22,7 @@ This will be already setup for you, if you are using an Alfresco provided pc for
 Please check that you are able to access the test environment(s) already created for you on:
 1. http://172.29.100.166:8080/alfresco (Requires VPN connection to Maidenhead or connection via maidenhead office) OR
 2. https://search-cdata-nv.dev.alfresco.me/alfresco
+3. https://gateway.aps2dev.envalfresco.com/alfresco
 
 If you are unable to access the URLs above, you would need to set a test environment up using docker. Please see the section 'Prepare Test Environment' for more information.
 If you are able to access the URLs above, you can move on to the section 'Configure the project properties' and 'Compile the Project' section below.
@@ -131,6 +132,12 @@ Check that the default.properties file is been updated with the following settin
 ```
 alfresco.scheme=https
 alfresco.server=search-cdata-nv.dev.alfresco.me
+alfresco.port=443
+
+OR
+
+alfresco.scheme=https
+alfresco.server=gateway.aps2dev.envalfresco.com
 alfresco.port=443
 ```
 
