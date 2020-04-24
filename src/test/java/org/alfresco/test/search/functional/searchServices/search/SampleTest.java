@@ -67,7 +67,7 @@ public class SampleTest extends AbstractE2EFunctionalTest
                 FileType.TEXT_PLAIN, "big yellow boat");
         dataContent.usingUser(testUser).usingSite(testSite).createContent(fileBigYellowBoat);
 
-        waitForContentIndexing(fileBigYellowBoat.getName(), true);
+        waitForContentIndexing(fileBigYellowBoat.getContent(), true);
 
     }
 

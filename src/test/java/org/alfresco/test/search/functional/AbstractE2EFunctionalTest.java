@@ -94,7 +94,7 @@ public abstract class AbstractE2EFunctionalTest extends AbstractTestNGSpringCont
         super.springTestContextPrepareTestInstance();
 
         deployCustomModel("model/music-model.xml");
-        deployCustomModel("model/finance-model.xml");
+        deployCustomModel("model/fin-model.xml");
     }
 
     @BeforeClass(alwaysRun = true)

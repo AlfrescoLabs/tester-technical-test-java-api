@@ -12,7 +12,6 @@ import java.util.Map;
 
 import org.alfresco.rest.search.SearchResponse;
 import org.alfresco.test.search.functional.AbstractE2EFunctionalTest;
-import org.alfresco.utility.constants.UserRole;
 import org.alfresco.utility.data.DataContent;
 import org.alfresco.utility.data.DataSite;
 import org.alfresco.utility.model.FileModel;
@@ -44,8 +43,6 @@ public class FixMeTest extends AbstractE2EFunctionalTest
     public void dataPreparation() throws Exception
     {
         serverHealth.assertServerIsOnline();
-
-        dataUser.addUserToSite(testUser, testSite, UserRole.SiteContributor);
 
         FolderModel testFolder = dataContent.usingSite(testSite).usingUser(testUser).createFolder();
 

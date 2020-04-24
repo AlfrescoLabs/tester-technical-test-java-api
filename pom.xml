@@ -11,9 +11,9 @@
    <name>Technical Tests Java API</name>
    <description>Technical Test Project to test Java API</description>
    <properties>
-      <tas.rest.api.version>6.0.0.3</tas.rest.api.version>
-      <tas.cmis.api.version>6.0.0.1</tas.cmis.api.version>
-      <tas.utility.version>2.0.12</tas.utility.version>
+      <tas.rest.api.version>1.37</tas.rest.api.version>
+      <tas.cmis.api.version>1.13</tas.cmis.api.version>
+      <tas.utility.version>3.0.20</tas.utility.version>
       <suiteXmlFile>src/test/resources/TestSuite.xml</suiteXmlFile>
       <test.exclude></test.exclude>
       <test.include></test.include>
@@ -51,8 +51,8 @@
    </build>
    <dependencies>
       <dependency>
-         <groupId>org.alfresco.tas</groupId>
-         <artifactId>restapi-test</artifactId>
+       <groupId>org.alfresco.tas</groupId>
+         <artifactId>restapi</artifactId>
          <version>${tas.rest.api.version}</version>
          <scope>test</scope>
           <exclusions>
@@ -64,7 +64,7 @@
       </dependency>
       <dependency>
          <groupId>org.alfresco.tas</groupId>
-         <artifactId>cmis-test</artifactId>
+         <artifactId>cmis</artifactId>
          <version>${tas.cmis.api.version}</version>
          <scope>test</scope>
           <exclusions>
@@ -111,5 +111,11 @@
            <artifactId>javafx-fxml</artifactId>
            <version>12-ea+10</version>
        </dependency>
+             <dependency>
+         <groupId>org.alfresco</groupId>
+         <artifactId>alfresco-rm-automation-enterprise-rest-api</artifactId>
+         <version>2.6.0</version>
+         <scope>test</scope>
+      </dependency>
    </dependencies>
 </project>
